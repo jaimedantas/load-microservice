@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.jaimedantas
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, gradle, http-client, junit, kotlin, kotlin-application, logback, management, micrometer, micrometer-atlas, netty-server, openapi, readme, shade, yaml]
