@@ -7,8 +7,11 @@ import io.swagger.v3.oas.annotations.info.*
 @OpenAPIDefinition(
     info = Info(
             title = "load-simulator",
-            version = "0.0"
-    )
+            version = "0.1",
+			description = "Simulates an API with a REST endpoint",
+			license = License(name = "MIT License", url = "https://github.com/jaimedantas/load-microservice/blob/main/LICENSE"),
+			contact = Contact(url = "https://jaimedantas.com", name = "Jaime", email = "jaimejales@hotmail.com")
+			)
 )
 object Api {
 }

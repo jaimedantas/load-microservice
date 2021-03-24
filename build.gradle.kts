@@ -23,7 +23,9 @@ micronaut {
     }
 }
 
+
 dependencies {
+    annotationProcessor("io.micronaut.openapi:micronaut-openapi:2.3.1")
     kapt("io.micronaut.openapi:micronaut-openapi")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-management")
@@ -61,4 +63,10 @@ tasks {
     }
 
 
+}
+
+kapt {
+    arguments {
+        arg("micronaut.openapi.views.spec", "redoc.enabled=true,rapidoc.enabled=true,swagger-ui.enabled=true,swagger-ui.theme=flattop")
+    }
 }
