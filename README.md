@@ -16,7 +16,7 @@ This microservice simulates a microservice with a REST endpoint at ``/api``.
 ## Building From Source
 To build from source checkout the code and run:
 ```
-$ gradle nativeBinaries
+$ gradle clean build
 ```
 ## Run
 To run the microservice, run:
