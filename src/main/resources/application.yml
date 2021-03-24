@@ -23,6 +23,6 @@ micronaut:
         paths: classpath:META-INF/swagger/views/swagger-ui
         mapping: /swagger-ui/**
 microservice:
-  processing-time: 2000
+  processing-time: 100
   threads: 2
 

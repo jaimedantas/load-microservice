@@ -30,7 +30,7 @@ http://localhost:8080/swagger/views/swagger-ui/
 ```
 ## Configuration
 The ``processing-time`` 
-property in the``application.yml`` defines the average processing time of each HTTP request takes in ms. You can also define the number of thread. 
+property in the``application.yml`` defines the average processing time of each HTTP request takes in ms. The minimum value for the load is 50ms. You can also define the number of threads. 
 
 ```
 micronaut:

@@ -21,7 +21,7 @@ class RestController {
      * Simulates an API call with some processing.
      */
     @Get(uri = "/api")
-    fun loadSimulator(): String {
+    suspend fun loadSimulator(): String {
         val correlationId = UUID.randomUUID()
         logger.info("Processing request {}", correlationId)
         loadSimulator.processLoad()
