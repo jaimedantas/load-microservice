@@ -6,11 +6,9 @@ import br.com.fluentvalidator.predicate.StringPredicate.stringMatches
 import com.jaimedantas.model.Resource
 import java.util.function.Predicate.not
 
-class ResourceValidator: AbstractValidator<Resource> {
+class ResourceValidator() : AbstractValidator<Resource>() {
 
     val UUID_REGEX: String = "[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}"
-
-    constructor() : super()
 
     override fun rules() {
 

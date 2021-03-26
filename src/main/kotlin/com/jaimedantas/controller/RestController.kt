@@ -4,7 +4,6 @@ import br.com.fluentvalidator.Validator
 import com.jaimedantas.model.Resource
 import com.jaimedantas.service.LoadSimulator
 import com.jaimedantas.validators.ResourceValidator
-import io.micrometer.core.ipc.http.HttpSender
 import io.micronaut.http.HttpResponse
 import io.micronaut.http.HttpStatus
 import io.micronaut.http.MediaType
@@ -34,15 +33,15 @@ class RestController {
     @Produces(MediaType.APPLICATION_JSON)
     suspend fun loadSimulator(resourceId: String): HttpResponse<Any> {
         val correlationId = UUID.randomUUID()
-        var httpResponse: HttpResponse<Any>
+        val httpResponse: HttpResponse<Any>
 
         logger.info("Processing request {}", correlationId)
-        var validationResult = validator.validate(Resource(resourceId))
-        if (!validationResult.isValid){
-            httpResponse = HttpResponse.status<Any>(HttpStatus.BAD_REQUEST).body<Any>(validationResult.errors)
+        val validationResult = validator.validate(Resource(resourceId))
+        httpResponse = if (validationResult.isValid){
+            val response = loadSimulator.processLoad()
+            HttpResponse.status<Any>(HttpStatus.OK).body<Any>(response)
         } else {
-            var response = loadSimulator.processLoad()
-            httpResponse = HttpResponse.status<Any>(HttpStatus.OK).body<Any>(response)
+            HttpResponse.status<Any>(HttpStatus.BAD_REQUEST).body<Any>(validationResult.errors)
         }
         logger.info("Finished Processing {}", correlationId)
 
