@@ -40,7 +40,7 @@ class RestControllerTest{
 
         val request: HttpRequest<HelloWorld> = HttpRequest.GET(uri)
         try {
-            val body = client.toBlocking().retrieve(request)
+            client.toBlocking().retrieve(request)
             fail("Should be bad request")
         } catch(e: HttpClientResponseException){
             assertEquals(HttpStatus.BAD_REQUEST, e.status)
