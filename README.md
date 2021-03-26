@@ -1,4 +1,4 @@
-<p align="center"><img src="/docs/icon.png" height="55%" width="55%"> </p>
+<p align="center"><img src="/docs/icon.png" height="25%" width="25%"> </p>
 
 # Load Simulator Microservice
 
