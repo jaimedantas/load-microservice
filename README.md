@@ -1,4 +1,4 @@
-<p align="center"><img src="/docs/icon.png" height="25%" width="25%"> </p>
+<p align="center"><img src="https://jaimedantas.com/load-microservice/docs/icon.png" height="25%" width="25%"> </p>
 
 # Load Simulator Microservice
 
