@@ -1,7 +1,9 @@
 ## Load Simulator Microservice
 <div>
-<img src="/docs/icon.png" width="300px"</img> 
+<p align="center"><img src="/docs/icon.png" width="300px"</img> </p>
 </div>
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jaimedantas_load-microservice&metric=alert_status)](https://sonarcloud.io/dashboard?id=jaimedantas_load-microservice)
 
 This microservice simulates a microservice with a REST endpoint at ``/resource/{resource_id}``.
 ## Languages and frameworks
