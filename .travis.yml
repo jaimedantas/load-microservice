@@ -1,5 +1,6 @@
+install: gradle wrapper --gradle-version 6.8.3
+
 language: java
-install: skip
 
 os: linux
 dist: trusty

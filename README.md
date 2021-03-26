@@ -4,6 +4,10 @@
 </div>
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jaimedantas_load-microservice&metric=alert_status)](https://sonarcloud.io/dashboard?id=jaimedantas_load-microservice)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=jaimedantas_load-microservice&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=jaimedantas_load-microservice)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=jaimedantas_load-microservice&metric=security_rating)](https://sonarcloud.io/dashboard?id=jaimedantas_load-microservice)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=jaimedantas_load-microservice&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=jaimedantas_load-microservice)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jaimedantas_load-microservice&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=jaimedantas_load-microservice)
 
 This microservice simulates a microservice with a REST endpoint at ``/resource/{resource_id}``.
 ## Languages and frameworks
