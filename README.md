@@ -1,7 +1,5 @@
 ## Load Simulator Microservice
-<div>
-<p align="center"><img src="/docs/icon.png" width="300px"</img> </p>
-</div>
+<p align="center"><img src="/docs/icon.png" width="300px"> </p>
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jaimedantas_load-microservice&metric=alert_status)](https://sonarcloud.io/dashboard?id=jaimedantas_load-microservice)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=jaimedantas_load-microservice&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=jaimedantas_load-microservice)
