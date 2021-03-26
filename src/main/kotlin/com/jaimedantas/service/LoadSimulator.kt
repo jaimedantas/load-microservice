@@ -41,7 +41,7 @@ class LoadSimulator{
         while (LocalDateTime.now() < startTime.plusNanos(duration * 1000000)){
             var dummy = 213123
             var dummy2 = dummy * dummy
-            dummy += dummy
+            dummy += dummy2
             Thread.sleep(50)
         }
     }
