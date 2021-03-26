@@ -7,5 +7,6 @@ class PropertiesConfiguration {
 
     var processingTime: Long = 0
     var threads: Long = 0
+    var returnMessage: String = ""
 
 }

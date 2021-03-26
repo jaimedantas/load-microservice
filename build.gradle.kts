@@ -39,6 +39,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     implementation("io.micronaut:micronaut-validation")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3")
+    implementation("com.github.mvallim:java-fluent-validator:1.9.3")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 }

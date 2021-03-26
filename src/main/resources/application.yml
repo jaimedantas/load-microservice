@@ -25,4 +25,5 @@ micronaut:
 microservice:
   processing-time: 100
   threads: 2
+  return-message: Hello World!
 

@@ -1,14 +1,16 @@
 package com.jaimedantas.service
 
+import br.com.fluentvalidator.Validator
 import com.jaimedantas.configuration.PropertiesConfiguration
+import com.jaimedantas.model.HelloWorld
+import com.jaimedantas.model.Resource
+import com.jaimedantas.validators.ResourceValidator
+import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import java.time.LocalDateTime
 import javax.inject.Inject
-import kotlin.concurrent.thread
-import kotlinx.coroutines.*
-import kotlin.system.*
 
 class LoadSimulator{
 
@@ -18,7 +20,8 @@ class LoadSimulator{
     /**
      * Process the request
      */
-    suspend fun processLoad() {
+    suspend fun processLoad(): HelloWorld {
+
         val currentStartTime = LocalDateTime.now()
         var threadDuration = propertiesConfiguration.processingTime/propertiesConfiguration.threads
         val deferreds: List<Deferred<Unit>> = (1..propertiesConfiguration.threads).map {
@@ -27,13 +30,15 @@ class LoadSimulator{
             }
         }
         deferreds.awaitAll()
+
+        return HelloWorld(propertiesConfiguration.returnMessage)
     }
 
     /**
      * Puts this thread to work for some time
      */
     private fun BusyThread(duration: Long, startTime: LocalDateTime) {
-        while (LocalDateTime.now() < startTime.plusNanos(duration*1000000)){
+        while (LocalDateTime.now() < startTime.plusNanos(duration * 1000000)){
             var dummy = 213123
             var dummy2 = dummy * dummy
             dummy += dummy
