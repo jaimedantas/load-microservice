@@ -37,6 +37,10 @@ Swagger UI is used for documentation. You can find the information accessing its
 ```
 http://localhost:8080/swagger/views/swagger-ui/
 ```
+You can try the API using the Swagger interface embedded on this microservice.  
+
+<p align="center"><img src="/docs/load_microservice_swagger.png" height="50%" width="50%"> </p>
+
 ## Configuration
 The ``processing-time`` property in the``application.yml`` defines the average processing time of each HTTP
 request in ms. The minimum value for the processing time is 50ms. You can also define the number of threads and the response

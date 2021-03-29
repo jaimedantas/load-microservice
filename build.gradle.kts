@@ -48,6 +48,7 @@ dependencies {
 application {
     mainClass.set("com.jaimedantas.ApplicationKt")
 }
+
 java {
     sourceCompatibility = JavaVersion.toVersion("11")
 }
