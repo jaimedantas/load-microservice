@@ -13,7 +13,6 @@ import javax.inject.Inject
 @Property(name = "microservice.threads", value = "1")
 class LoadSimulatorTest{
 
-
     @Inject
     lateinit var loadSimulator: LoadSimulator
 
