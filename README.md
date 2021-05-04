@@ -40,7 +40,7 @@ http://localhost:8080/swagger/views/swagger-ui/
 ```
 You can try the API using the Swagger interface embedded on this microservice.  
 
-<p align="center"><img src="/docs/load_microservice_swagger.png" height="50%" width="50%"> </p>
+<p align="center"><img src="https://jaimedantas.com/load-microservice/docs/load_microservice_swagger.png" height="50%" width="50%"> </p>
 
 There is a tutorial on Medium [here](https://medium.com/reverse-engineering/creating-your-very-first-microservice-with-micronaut-and-kotlin-9be6be4a58d5).
 ## Configuration
